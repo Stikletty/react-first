@@ -1,0 +1,19 @@
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.headerBox h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.headerBox button {
+  width: 120px;
+  padding: 3px;
+}

@@ -1,17 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: grey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-html {
-  display: flex;  
+body{
+  min-height: 100vh;
+  background-color: #e5ebee;
 }
 
 .app {
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+
+  justify-content: space-evenly;
   justify-items: center;
-  order: 4;
+  align-items: center;  
+  align-content: space-around;
 }

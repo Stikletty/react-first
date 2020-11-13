@@ -1,12 +1,21 @@
 import React from "react";
-import './Tweet.css';
+import "./Tweet.css";
 
-function Twitter() {
+function Twitter(props) {
   return (
     <div className="tweet">
-      <h2>Header</h2>
-      <p>Szöveg</p>
-      <h2>Retweets</h2>
+      <h3 className="tweetHeader">{props.header}</h3>
+      <div className="tweetBody">
+        {props.text}
+        <div className="tweetImgBox">
+          <img
+            className="tweetImg"
+            src={props.imageUrl}
+            alt="Placeholder animal"
+          ></img>
+        </div>
+      </div>
+      <div className="tweetFooter">Retweets ({props.retweets})</div>
     </div>
   );
 }
